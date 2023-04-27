@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  transition: all 1s;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+
+  &:before {
+    background: linear-gradient(130deg, #25a3fb, rgba(0, 0, 0, 0), #2ca71d);
+    border-width: 3px;
+    padding: 1px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .filter1 {
+    position: absolute;
+    background: #25a3fb;
+    opacity: 0.7;
+    filter: blur(75px);
+  }
+  .filter2 {
+    position: absolute;
+    background: #2ca71d;
+    opacity: 0.7;
+    filter: blur(75px);
+  }
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+    .status_label {
+      align-items: center;
+      box-sizing: border-box;
+      width: auto;
+      text-align: center;
+      p {
+        font-family: "Lexend";
+        font-style: normal;
+        font-weight: 500;
+        text-align: justify;
+        letter-spacing: 0.15em;
+        color: #e5e5e5;
+        ul {
+          li::before {
+            color: #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+}
