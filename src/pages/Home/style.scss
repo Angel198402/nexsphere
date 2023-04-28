@@ -78,6 +78,15 @@
     }
   }
 }
+
+@media screen and (max-width: 460px) {
+  .home {
+    .ourcompanies {
+      height: 500px;
+    }
+  }
+}
+
 @media screen and (max-width: 360px) {
   .home {
     .ourcompanies {
