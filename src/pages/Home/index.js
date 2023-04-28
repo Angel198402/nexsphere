@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home">
       <div className="welcome_message">
-        <div className="welcome_heading">Welcome to Nexsphere's</div>
+        <div className="welcome_heading">Really Welcome to Nexsphere's</div>
         <div className="welcome_body">
           Welcome to Nexsphere Holdings, a technology holding company that
           specialises in developing and acquiring innovative companies in the
